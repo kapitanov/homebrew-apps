@@ -5,21 +5,21 @@
 class GitTodo < Formula
   desc "A local-only list of TODO items for your git repositories"
   homepage "https://github.com/kapitanov/git-todo"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.2/git-todo_v0.0.2_macos_x86_64.tar.gz"
-      sha256 "309c1426c13b4aaa24ee38aecce083adb00dad5c876cdc4b92967b2e1d7ce881"
+      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.3/git-todo_v0.0.3_macos_x86_64.tar.gz"
+      sha256 "3a250fff55bf586ff8bd77182898b78b590ba39270b86d9fa06794d7d6313882"
 
       def install
         bin.install "git-todo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.2/git-todo_v0.0.2_macos_arm64.tar.gz"
-      sha256 "ad8d2fd692c5bb050e730c9dc88fde00e19309bb0b6fd4bcca0ce3af84c445f6"
+      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.3/git-todo_v0.0.3_macos_arm64.tar.gz"
+      sha256 "e372dfc442f693607471a67fe703fe9f83b3db13b4083fccfa47416e202b223d"
 
       def install
         bin.install "git-todo"
@@ -29,22 +29,22 @@ class GitTodo < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.2/git-todo_v0.0.2_linux_x86_64.tar.gz"
-      sha256 "ba26b90858829b6d49c63da920185883725b8142ce47b75161a5c1d20de33131"
+      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.3/git-todo_v0.0.3_linux_x86_64.tar.gz"
+      sha256 "5c358ccc5fa816a188d5fd868bb421d0d02a1f3143eee536ad6a66d0b6c93f54"
       def install
         bin.install "git-todo"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.2/git-todo_v0.0.2_linux_arm.tar.gz"
-      sha256 "852a23d2bcd2a1491463f4efed058925f0041bf9bdff67c6dee14407f386bfb1"
+      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.3/git-todo_v0.0.3_linux_arm.tar.gz"
+      sha256 "7f2f0c3ae983fa366ca003866bc04bb3cba8cf5c4ff0768273699852f4c181b1"
       def install
         bin.install "git-todo"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.2/git-todo_v0.0.2_linux_arm64.tar.gz"
-      sha256 "5997ee7cd5c197463067694c517c60c5878ec7fd8cc1054e972ee59a0c0413a9"
+      url "https://github.com/kapitanov/git-todo/releases/download/v0.0.3/git-todo_v0.0.3_linux_arm64.tar.gz"
+      sha256 "39149a2a52ecefe9748cf8f1ace8db58f53212c0d7bdf0a77f18a840c10f2f64"
       def install
         bin.install "git-todo"
       end
