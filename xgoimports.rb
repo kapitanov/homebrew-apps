@@ -5,21 +5,21 @@
 class Xgoimports < Formula
   desc "A better goimports that keeps your imports sorted and grouped nicely"
   homepage "https://github.com/kapitanov/xgoimports"
-  version "0.1.0"
+  version "0.1.1"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.0/xgoimports_v0.1.0_macos_x86_64.tar.gz"
-      sha256 "f0504f71c0ad72cc5170b3f6a0b33d564191791773e0148e12aed773f560415e"
+      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.1/xgoimports_v0.1.1_macos_x86_64.tar.gz"
+      sha256 "79f3831550866ac3152323283a66fd708d52be3793f0ecc0a7a8f4d06b912443"
 
       def install
         bin.install "xgoimports"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.0/xgoimports_v0.1.0_macos_arm64.tar.gz"
-      sha256 "0f7cba6f68755577524a55f963b1fcda4150e6263749602ebffed4ff9a975b82"
+      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.1/xgoimports_v0.1.1_macos_arm64.tar.gz"
+      sha256 "d46a250f729b1deb1cc68187b0ebd1d22835049fa4cc8b65b3838e9b3d3ed604"
 
       def install
         bin.install "xgoimports"
@@ -29,22 +29,22 @@ class Xgoimports < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.0/xgoimports_v0.1.0_linux_x86_64.tar.gz"
-      sha256 "81b20945b16527729596bef4dfa7076d822054422d4d0c032e031af2560139ce"
+      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.1/xgoimports_v0.1.1_linux_x86_64.tar.gz"
+      sha256 "68b16612b76eb905388e539fe3b3e252accc41a491714063234875b9c5efc61e"
       def install
         bin.install "xgoimports"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.0/xgoimports_v0.1.0_linux_arm.tar.gz"
-      sha256 "8e36758d886389374b5cab8faf5b233361b3de824f54d8c19e7754dc41ec3aaf"
+      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.1/xgoimports_v0.1.1_linux_arm.tar.gz"
+      sha256 "3d4aa794262aa85de48882044b616fdcd74eff70e2751c698022770ebe070878"
       def install
         bin.install "xgoimports"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.0/xgoimports_v0.1.0_linux_arm64.tar.gz"
-      sha256 "4feabfc1a62a04741790a51fed71668507e6a828a9ae6aeb9c7985d7ad98eadc"
+      url "https://github.com/kapitanov/xgoimports/releases/download/v0.1.1/xgoimports_v0.1.1_linux_arm64.tar.gz"
+      sha256 "7ae5c68d7c68f799cd9f6d553aa8d995e77c87d54b346a8738d3bf0d609eb956"
       def install
         bin.install "xgoimports"
       end
